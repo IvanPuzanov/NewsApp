@@ -86,6 +86,7 @@
 		2A0D5C532AA900CC008ECC85 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		2A0D5C552AA90263008ECC85 /* NewsRegularCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRegularCVCell.swift; sourceTree = "<group>"; };
 		2A0D5C572AA9036B008ECC85 /* UILabelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelBuilder.swift; sourceTree = "<group>"; };
+		2A4B46002ADEB694005A57D1 /* App Architecture.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "App Architecture.md"; sourceTree = "<group>"; };
 		2ACBEED52AD6E23800687B47 /* DBNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBNews.xcdatamodel; sourceTree = "<group>"; };
 		2ACBEED72AD7CD5700687B47 /* NewsSectionCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSectionCVCell.swift; sourceTree = "<group>"; };
 		2ACBEEF82AD831D700687B47 /* NewsCompactCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCompactCVCell.swift; sourceTree = "<group>"; };
@@ -151,6 +152,7 @@
 				2A0D5C312AA89F5E008ECC85 /* Common */,
 				2A0D5C452AA8C031008ECC85 /* Support */,
 				2A0D5C222AA87178008ECC85 /* Info.plist */,
+				2A4B46002ADEB694005A57D1 /* App Architecture.md */,
 			);
 			path = News;
 			sourceTree = "<group>";

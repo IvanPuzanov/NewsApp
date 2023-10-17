@@ -52,6 +52,10 @@ extension NewsImageView: Configurable {
     
     func cancelLoading() {
         imageLoader.cancel(for: self)
+        
+        DispatchQueue.main.async {
+            self.image = nil
+        }
     }
     
     override func layoutSubviews() {

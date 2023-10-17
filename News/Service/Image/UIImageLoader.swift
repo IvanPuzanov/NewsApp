@@ -32,7 +32,9 @@ extension UIImageLoader: UIImageLoaderProtocol {
                 let image = try result.get()
                 
                 DispatchQueue.main.async {
-                    imageView.image = image
+                    UIView.animate(withDuration: 0.3) {
+                        imageView.image = image
+                    }
                 }
             } catch {
                 print("Ошибка при получении картинки \(url)")
