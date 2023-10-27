@@ -89,12 +89,12 @@ private extension NewsListVC {
 
 extension NewsListVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let news = self.collectionView.news(at: indexPath) {
-            input.send(.openDetail(news: news))
-        }
-        
         if let section = self.collectionView.section(at: indexPath) {
             input.send(.filterNews(bySection: section))
+        }
+        
+        if let news = self.collectionView.news(at: indexPath) {
+            input.send(.openDetail(news: news))
         }
     }
 }

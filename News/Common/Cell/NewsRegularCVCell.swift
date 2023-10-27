@@ -65,7 +65,7 @@ private extension NewsRegularCVCell {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.topAnchor.constraint(equalTo: topAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor, multiplier: 5/7)
+            imageView.heightAnchor.constraint(equalTo: widthAnchor, multiplier: 5/7)
         ])
     }
     

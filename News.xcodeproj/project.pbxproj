@@ -40,6 +40,9 @@
 		2ACF1B022AB1E636000E2B84 /* NewsDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF1B012AB1E636000E2B84 /* NewsDetailVM.swift */; };
 		2ACF1B042AB1E668000E2B84 /* NewsDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF1B032AB1E668000E2B84 /* NewsDetailAssembly.swift */; };
 		2ACF1B062AB20E66000E2B84 /* TransitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF1B052AB20E66000E2B84 /* TransitionService.swift */; };
+		2AD6EEA32AE820EB00840BE4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6EEA22AE820EB00840BE4 /* Image.swift */; };
+		2AF9DDD32AEBA7C2000C7164 /* UIButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9DDD22AEBA7C2000C7164 /* UIButtonBuilder.swift */; };
+		2AF9DDD52AEBA951000C7164 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF9DDD42AEBA951000C7164 /* Title.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,9 @@
 		2ACF1B012AB1E636000E2B84 /* NewsDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailVM.swift; sourceTree = "<group>"; };
 		2ACF1B032AB1E668000E2B84 /* NewsDetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailAssembly.swift; sourceTree = "<group>"; };
 		2ACF1B052AB20E66000E2B84 /* TransitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionService.swift; sourceTree = "<group>"; };
+		2AD6EEA22AE820EB00840BE4 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		2AF9DDD22AEBA7C2000C7164 /* UIButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonBuilder.swift; sourceTree = "<group>"; };
+		2AF9DDD42AEBA951000C7164 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +297,7 @@
 		2A0D5C452AA8C031008ECC85 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				2AD6EEA12AE820DB00840BE4 /* Constant */,
 				2A0D5C322AA89F67008ECC85 /* Protocol */,
 				2A0D5C4B2AA8C605008ECC85 /* Builder */,
 				2A0D5C4C2AA8C60B008ECC85 /* Factory */,
@@ -312,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				2A0D5C572AA9036B008ECC85 /* UILabelBuilder.swift */,
+				2AF9DDD22AEBA7C2000C7164 /* UIButtonBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -422,6 +430,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2AD6EEA12AE820DB00840BE4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				2AD6EEA22AE820EB00840BE4 /* Image.swift */,
+				2AF9DDD42AEBA951000C7164 /* Title.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,6 +543,7 @@
 			files = (
 				2A0D5C542AA900CC008ECC85 /* CoreDataService.swift in Sources */,
 				2ACBEEF92AD831D700687B47 /* NewsCompactCVCell.swift in Sources */,
+				2AD6EEA32AE820EB00840BE4 /* Image.swift in Sources */,
 				2A0D5C562AA90263008ECC85 /* NewsRegularCVCell.swift in Sources */,
 				2ACF1ADD2AB086B0000E2B84 /* UIImageLoader.swift in Sources */,
 				2ACF1B042AB1E668000E2B84 /* NewsDetailAssembly.swift in Sources */,
@@ -536,10 +554,12 @@
 				2A0D5C4A2AA8C0B4008ECC85 /* NetworkService.swift in Sources */,
 				2A0D5C362AA8A036008ECC85 /* ServiceAssembly.swift in Sources */,
 				2ACF1AD92AAF960B000E2B84 /* NewsImageView.swift in Sources */,
+				2AF9DDD52AEBA951000C7164 /* Title.swift in Sources */,
 				2A0D5C582AA9036B008ECC85 /* UILabelBuilder.swift in Sources */,
 				2A0D5C152AA87174008ECC85 /* AppDelegate.swift in Sources */,
 				2ACF1B022AB1E636000E2B84 /* NewsDetailVM.swift in Sources */,
 				2A0D5C422AA8AC67008ECC85 /* NewsListVM.swift in Sources */,
+				2AF9DDD32AEBA7C2000C7164 /* UIButtonBuilder.swift in Sources */,
 				2ACF1ADB2AB04FB4000E2B84 /* ImageLoader.swift in Sources */,
 				2ACF1AE62AB1B494000E2B84 /* NewsCollectionView.swift in Sources */,
 				2ACBEED62AD6E23800687B47 /* DBNews.xcdatamodeld in Sources */,

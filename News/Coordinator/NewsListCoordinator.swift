@@ -32,7 +32,8 @@ final class NewsListCoordinator: AnyCoordinator {
 extension NewsListCoordinator: NewsListModuleOutput {
     func openDetail(for news: News) {
         let viewController = NewsDetailAssemblly().makeNewsDetailModule(news: news)
+        viewController.modalPresentationStyle = .overFullScreen
         
-        navigationController.pushViewController(viewController, animated: true)
+        navigationController.present(viewController, animated: true)
     }
 }

@@ -1,6 +1,6 @@
-# Точка входа – NewsListCoordinator, инициализированный в AppDelegate
+Точка входа – NewsListCoordinator, инициализированный в AppDelegate
 
-# Сбощик сервисов
+Сбощик сервисов
 Может собрать:
 1) Сервис для работы с новостным API (NewsService)
 2) Сервис для работы с Core Data (CoreDataService)
@@ -11,7 +11,7 @@
 +-----------------------------+
 
 
-# Сбощик модуля "NewsList"
+Сбощик модуля "NewsList"
 +-----------------------------+      +-----------------------------+     
 |                             |      |                             |
 |       NewsListAssembly      |  --> |          NewsListVC         |

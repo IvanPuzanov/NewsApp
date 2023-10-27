@@ -20,7 +20,8 @@ final class NewsDetailVC: UIViewController {
     
     // MARK: UI
     
-    private let imageView = NewsImageView(frame: .zero)
+    private let imageView   = NewsImageView(frame: .zero)
+    private var doneButton = UIButton()
     
     // MARK: Инициализация
     
@@ -42,9 +43,18 @@ extension NewsDetailVC {
         
         configure()
         configureImageView()
+        configureDoneButton()
         bindViewModel()
         
         input.send(.configureImageView(imageView))
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        UIView.animate(withDuration: 0.1) {
+            self.view.subviews.forEach { $0.alpha = 0 }
+        }
     }
 }
 
@@ -60,6 +70,11 @@ private extension NewsDetailVC {
                 print("Произошла ошибка")
             }
         }.store(in: &disposeBag)
+    }
+    
+    @objc
+    func close() {
+        self.dismiss(animated: true)
     }
 }
 
@@ -78,6 +93,26 @@ private extension NewsDetailVC {
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             imageView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 5/6)
+        ])
+    }
+    
+    func configureDoneButton() {
+        doneButton = UIButtonBuilder()
+            .withTitle(Title.done)
+            .withFont(size: 15, weight: .regular)
+            .withBackgroundColor(.systemGray6)
+            .withCorner(radius: 22)
+            .build()
+        
+        view.addSubview(doneButton)
+        doneButton.translatesAutoresizingMaskIntoConstraints = false
+        doneButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        
+        NSLayoutConstraint.activate([
+            doneButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            doneButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+            doneButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            doneButton.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
 }

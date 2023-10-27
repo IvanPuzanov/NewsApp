@@ -90,7 +90,7 @@ private extension NewsCollectionView {
                                                      heightDimension: .estimated(300))
                 
                 let item    = NSCollectionLayoutItem(layoutSize: size)
-                item.contentInsets = .init(top: 0, leading: 16, bottom: 15, trailing: 16)
+//                item.contentInsets = .init(top: 0, leading: 16, bottom: 15, trailing: 16)
                 
                 let group   = NSCollectionLayoutGroup.vertical(layoutSize: size, subitems: [item])
                 let section = NSCollectionLayoutSection(group: group)
